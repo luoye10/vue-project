@@ -71,3 +71,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+html,
+body,
+div {
+  box-sizing: border-box;
+}
