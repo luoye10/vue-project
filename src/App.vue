@@ -29,6 +29,7 @@ function triple(){
   startTime.value = new Date().getSeconds()
   isAdd.value = true
   isShake.v = true
+  setTimeout(() => isShake.v = false, 4000)
 }
 function up(){
   endTime.value = new Date().getSeconds()
@@ -39,6 +40,9 @@ function up(){
     isCollect.v = true
     isAdd.value = false
     isShake.v = false
+    a.value++
+    b.value++
+    c.value++
   }else{
     isAdd.value = false
     isLike.v = false
@@ -65,6 +69,7 @@ function share(){
   isShare.v = true
 }
 </script>
+
 
 <template>
   <div class="box">
@@ -194,7 +199,7 @@ function share(){
           transform: rotate(45deg);
         }
         50%{
-          transform: translate(225deg);
+          transform: rotate(225deg);
         }
         100%{
           transform: rotate(225deg);
