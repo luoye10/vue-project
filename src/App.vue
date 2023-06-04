@@ -29,7 +29,9 @@ function triple(){
   startTime.value = new Date().getSeconds()
   isAdd.value = true
   isShake.v = true
-  setTimeout(() => isShake.v = false, 4000)
+  setTimeout(() => {
+    isShake.v = false
+  }, 4000)
 }
 function up(){
   endTime.value = new Date().getSeconds()
